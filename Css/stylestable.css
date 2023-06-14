@@ -1,0 +1,59 @@
+/* Estilos CSS para el formulario */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+}
+
+body {
+    background: url(/Images/Fondotabla500px.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: 'popins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: black;
+    margin: 10px;
+    padding: 15px;
+    font-family: 'popins', sans-serif;
+}
+
+@media(min-width:720px) {
+
+
+    * {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+        font-family: sans-serif;
+        color: black;
+    }
+
+    body {
+        min-height: 100vh;
+        background: url(/Images/fondotablas720px.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        font-family: 'popins', sans-serif;
+    }
+
+    h1 {
+        text-align: center;
+        color: black;
+        margin: 10px;
+        padding: 15px;
+        font-family: 'popins', sans-serif;
+    }
+}

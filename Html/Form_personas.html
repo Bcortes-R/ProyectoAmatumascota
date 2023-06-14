@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es" title="veterinaria">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/Css/stylesPersona.css" />
+    <link rel="shortcut icon" href="/Images/veterinary.png">
+    <title>Registro personas</title>
+</head>
+
+<body>
+
+<section>
+    <div class="form__container">
+    <form class="form" id="form">
+
+        <h1 class="form__title">Registro Personas</h1>
+
+
+
+            <!-- Nombres -->
+            <i class="fa-solid fa-user"></i>
+            <div class="form__group">
+                
+                <input type="text" id="nombre" class="form__input" placeholder=" " />
+                <label for="name" class="form__label"> Nombres</label>
+                <span class="form_line"></span>
+            </div>
+
+            <!-- Apellidos -->
+            <i class="fa-solid fa-user-pen"></i>
+            <div class="form__group">
+                <input type="text" id="apellido" class="form__input" placeholder=" " />
+                <label for="Apellidos" class="form__label">Apellidos</label>
+                <span class="form__line"></span>
+            </div>
+
+            <!-- Correo electronico -->
+            <i class="fa-solid fa-envelope"></i>
+            <div class="form__group">
+                <input type="email" id="email" class="form__input" required="tru" placeholder=" ">
+                <label for="email" class="form__label">Correo </label>
+                <span class="form_line"></span>
+            </div>
+
+            <!-- Edad -->
+            <i class="fa-solid fa-calendar-days fa-fade" style="color: #040404;"></i>
+            <div class="form__group">
+                <input type="number" id="edad" class="form__input" placeholder=" " />
+                <label for="edad" class="form__label">Edad  </label>
+                <span class="form__line"></span>
+            </div>
+                
+
+            <!-- Documento de identidad -->
+            <i class="fa-solid fa-address-card"></i>
+            <div class="form__group">
+                <input type="number" id="ced" class="form__input" placeholder=" " />
+                <label for="ced" class="form__label">Identificación</label>
+                <span class="form__line"></span>
+            </div>
+
+            <!-- Lista de especialidades -->
+            <i class="fa-solid fa-ballot-check"></i>
+            <div class="form__group">
+                <select id="especialidad" class="form__input">
+                    <opti
+                    
+                    <option value="medicina general" class="form__label">Medicina General </option>
+                    <option value="Cardiologia" class="form__label">Cardiologia</option>
+                    <option value="Medicina interna" class="form__label">Medicina interna</option>
+                    <option value="Dermatologia" class="form__label">Dermatologia</option>
+                    <option value="Rehabilitacion fisica" class="form__label">Rehabilitación fisica</option>
+                    <option value="Psicologia" class="form__label">Psicologia</option>
+                    <option value="Odontologia" class="form__label">Odontologia</option>
+                    <option value="Radiologia" class="form__label">Radiografia</option>
+                </select>
+                <span class="form__line"></span>
+            </div>
+
+            <!-- Terminos y condiciones -->
+
+            <div class="form__group">
+                <input type="checkbox" required>
+                <label>Acepto terminos y condiciones</label>
+            </div>
+
+            <p class="form__paragraph">¿Eres medico?
+                <a href="Form_Medicos.html" class="form__link">Ingresa aqui</a>
+            </p>
+            <!-- Boton de enviar  -->
+
+            <input type="submit" value="Enviar">
+            
+        </div>
+    </form>
+    <script src="/JavaScript/registro_personas.js"></script>
+    <script src="/JavaScript/login.js"></script>
+    <script src="/JavaScript/app.js"></script>
+    </section>
+</body>
+
+</html>

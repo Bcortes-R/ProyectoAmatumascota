@@ -1,0 +1,271 @@
+/* tipografias de texto */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,200&display=swap');
+
+/* Poner en cero todo el documento */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo del documento */
+
+section {
+    background-image: url('/Images/mascotas.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Formulario */
+
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding: 40px;
+    transform: translate(-50%, -55%);
+    background: transparent;
+    backdrop-filter: blur(3px);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(51, 49, 49, 0.6);
+    border-radius: 10px;
+}
+
+/* estilo h1 */
+
+.form__title {
+    margin: 0 0 20px;
+    padding: 0;
+    color: #000000;
+    text-align: center;
+    font-size: calc(1em + 1vw);
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.form__paragraph {
+    font-weight: bold;
+    text-align: center;
+
+
+}
+
+/* terminos y condiciones + lines inferiores */
+
+.form__group {
+    text-align: center;
+    font-weight: bold;
+    position: relative;
+    --color: black;
+    padding: 12px;
+    background: transparent;
+}
+
+
+.form__input {
+    width: 100%;
+    background: none;
+    color: #000000;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    align-items: center;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fa-solid {
+    padding: 0;
+    position: absolute;
+    text-align: right;
+    padding-left: 18rem;
+}
+
+.form__input:not(:placeholder-shown) {
+    color: #000000;
+}
+
+/* efecto texto imput */
+
+.form__input:focus+.form__label,
+.form__input:not(:placeholder-shown)+.form__label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #400221;
+    font-weight: bold;
+}
+
+/* color texto formulario  */
+
+.form__label {
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+/* btn enlace  */
+
+.form__link {
+    font-weight: bold;
+    color: rgb(108, 2, 238);
+}
+
+.form__link:hover {
+    color: #827f82;
+    transform: scale(1.1);
+
+}
+
+/* btn enviar */
+
+input[type="submit"] {
+    background-color: transparent;
+    position: center;
+    margin: 8px;
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(3, 2, 2);
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+
+
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0;
+    background-color: #a566af;
+    -webkit-filter: url("#goo");
+    filter: url("#goo");
+}
+
+/* Tamaños superiores a 720px */
+
+@media (min-width: 720px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        background-image: url('/Images/Mascota1.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -55%);
+        background: transparent;
+        backdrop-filter: blur(3px);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgb(51, 49, 49, 0.6);
+        border-radius: 10px;
+    }
+
+    .form__paragraph {
+        font-weight: 300px;
+
+    }
+
+    .form__link {
+        font-weight: bold;
+        color: black;
+    }
+
+    .form__container {
+        display: grid;
+        gap: 2.5em;
+    }
+
+    .form__group {
+        position: relative;
+        --color: black;
+        padding: 12px;
+    }
+
+    .form__input {
+        width: 100%;
+        background: none;
+        color: #000000;
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .form__input:not(:placeholder-shown) {
+        color: #030202;
+    }
+
+    .form__label {
+        color: var(--color);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s;
+    }
+
+    input[type="submit"] {
+        background-color: #3866f2;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        font-size: 1rem;
+        padding: 15px 20px;
+        border: none;
+        border-radius: .5em;
+    }
+
+    input[type="submit"]:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 0;
+        background-color: transparent;
+        color: #000000;
+        font-weight: bold;
+    }
+
+    input[type="submit"]t:focus~.form__line,
+    input[type="submit"]t:not(:placeholder-shown)~.form__line {
+        transform: scale(1);
+        box-shadow: 0 0 10px 0;
+    }
+
+
+}

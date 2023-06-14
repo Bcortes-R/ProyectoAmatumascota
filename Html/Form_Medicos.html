@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es" title="Ama tu mascota">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/fontawesome-free-6.4.0-web/css/all.min.css">
+    <link rel="stylesheet" href="/Css/stylesMedicos.css" />
+    <link rel="shortcut icon" href="/Images/doctor.png">
+    <title>Formulario de registro Medicos</title>
+</head>
+
+<body>
+    <section>
+
+        <div class="login-box">
+            <h1>Registro Medicos </h1>
+
+
+            <form class="form" id="form">
+
+                <!-- Nombres -->
+
+                <i class="fa-solid fa-user-doctor"></i>
+                <div class="user-box">
+                    <input type="text" id="nombre" required />
+                    <label>Nombres </label>
+                </div>
+
+
+                <!-- Apellidos -->
+                
+                <i class="fa-solid fa-user-nurse"></i>
+                <div class="user-box">
+                    <input type="text" id="apellido" required />
+                    <label>Apellidos</label>
+                </div>
+
+                <!-- Documento de indentificación --> 
+
+                <i class="fa-solid fa-id-card"></i>
+                <div class="user-box">
+                    <input type="number" id="cedula" required />
+                    <label>Documento de Identidad</label>
+                </div>
+
+                <!-- Numero telefonico --> 
+                
+                <i class="fa-solid fa-mobile-screen"></i>
+                <div class="user-box">
+                    <input type="number" id="telefono" required />
+                    <label>Telefono de Contacto</label>
+                </div>
+
+
+                <!-- Consultorio -->
+
+                <i class="fa-solid fa-hospital"></i>
+                <div class="user-box">
+                    <input type="number" id="consultorio" required />
+                    <label>Consultorio</label>
+                </div>
+
+
+                <!-- Correo Electronico -->
+                
+                <i class="fa-sharp fa-solid fa-envelope"></i>
+                <div class="user-box">
+                    <input type="email" id="correo" required />
+                    <label>Correo electronico</label>
+                </div>
+
+                <!-- Especialidades -->
+
+                <div class="user-box">
+                    <select name="especialidades" id="especialidad" class="form__input">
+                        <option value=" " id="opciones" class="form__label">
+                            --Seleccione su Especialidad
+                        </option>
+                        <option value="Medicina General" class="form__label">
+                            Medicina General
+                        </option>
+                        <option value="Cardiologia" class="form__label">
+                            Cardiologia
+                        </option>
+                        <option value="Dermatologia" class="form__label">
+                            Dermatologia
+                        </option>
+                        <option value="Rehabilitación fisica" class="form__label">
+                            Rehabilitación Fisica
+                        </option>
+                        <option value="Psicologia" class="form__label">Psicologia</option>
+                        <option value="Odontologia" class="form__label">
+                            Odontologia
+                        </option>
+                        <option value="Radiografia" class="form__label">
+                            Radiografia
+                        </option>
+                    </select>
+                    <span class="form__line"></span>
+                </div>
+
+                <!-- Terminos y Condiciones -->
+
+                <div class="form__group">
+                    <input type="checkbox" required />
+                    <label>Acepto Terminos y Condiciones</label>
+                </div>
+
+                <p class="form__paragraph">¿Eres Paciente?
+                    <a href="Form_personas.html" class="form__link">Ingresa aquí</a>
+                </p>
+
+                <!-- Boton de registro -->
+
+                <input type="submit" value="Registrar" />
+
+            </form>
+        </div>
+        <script src="/JavaScript/Form_medicos.js"></script>
+        <script src="/JavaScript/login.js"></script>
+        <script src="/JavaScript/app.js"></script>
+    </section>
+</body>
+
+</html>
+
+

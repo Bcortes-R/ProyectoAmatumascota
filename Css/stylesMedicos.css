@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+/* todo el documento */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo del documento */
+
+section {
+    background-image: url('/Images/10.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 101vh;
+
+    font-family: 'popins', sans-serif;
+}
+
+/* Fromulario */
+
+.login-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 350px;
+    padding: 30px;
+    transform: translate(-50%, -55%);
+    background: transparent;
+    backdrop-filter: blur(3px);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgb(51, 49, 49, 0.6);
+    border-radius: 10px;
+}
+
+.login-box h1:first-child {
+    margin: 10px;
+    padding: 10px;
+    color: #2f002c;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.login-box .user-box {
+    position: relative;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    align-items: center;
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fa-solid {
+    padding: 0;
+    position: absolute;
+    text-align: right;
+    padding-left: 18rem;
+}
+
+.login-box .user-box input {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    color: #2f002c;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #2f002c;
+    outline: none;
+    background: transparent;
+}
+
+.login-box .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #2f002c;
+    pointer-events: none;
+    transition: .5s;
+    background: transparent;
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #2f002c;
+    font-size: 12px;
+}
+
+
+/* Lista de especialidades */
+
+.form__input {
+    width: 100%;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'roboto', sans-serif;
+}
+
+.form__input:not(:placeholder-shown) {
+    background-color: transparent;
+    color: #2f002c;
+    border-radius: 5px;
+}
+
+.form__input:focus+.for__label,
+.form__input:not(:placeholder-shown)+.for__label {
+    transform: translateY(-12px) scale(.7);
+    transform-origin: left top;
+    color: #2f002c;
+}
+
+.for__label {
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+
+.form__line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2%;
+    background-color: #2f002c;
+    transform: scale(0);
+    transform: left bottom;
+    transition: transform .4s;
+}
+
+.form__input:focus~.form__line,
+.form__input:not(:placeholder-shown)~.form__line {
+    transform: scale(1);
+}
+
+.form__group {
+    position: relative;
+    padding: 10px;
+    text-align: center;
+}
+
+.form__paragraph {
+    text-align: center;
+}
+
+/* Boton de registro */
+
+input[type="submit"] {
+    background-color: transparent;
+    position: center;
+    margin: 8px;
+    display: inline-block;
+    font-weight: bold;
+    color: rgb(3, 2, 2);
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+
+    cursor: pointer;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 0;
+    -webkit-filter: url("#goo");
+        filter: url("#goo");
+}
+
+/* Pantallas de tamaños superiores a 720px  */
+
+@media (min-width: 720px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    section {
+        background-image: url('/Images/Doctoravete.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+    }
+
+    .login-box {
+        position: absolute;
+        top: 45%;
+        left: 45%;
+        width: 400px;
+        padding: 40px;
+        transform: translate(-50%, -50%);
+        background: transparent;
+        backdrop-filter: blur(3px);
+        box-sizing: border-box;
+        box-shadow: 0 15px 25px rgb(51, 49, 49, 0.6);
+        border-radius: 10px;
+    }
+
+    .login-box h1:first-child {
+        margin: 0 10px;
+        padding: 10;
+        color: #2f002c;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    .login-box .user-box {
+        position: relative;
+    }
+
+    .login-box .user-box input {
+        width: 100%;
+        padding: 10px 0;
+        font-size: 16px;
+        color: black;
+        margin-bottom: 30px;
+        border: none;
+        border-bottom: 1px solid #2f002c;
+        outline: none;
+        background: transparent;
+    }
+
+    .login-box .user-box label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 0;
+        font-size: 16px;
+        color: black;
+        pointer-events: none;
+        transition: .5s;
+        background: transparent;
+    }
+
+    .login-box .user-box input:focus~label,
+    .login-box .user-box input:valid~label {
+        top: -20px;
+        left: 0;
+        color: #2f002c;
+        font-size: 12px;
+    }
+
+    /* Estilos de lista especialidades */
+
+    .form__input {
+        width: 100%;
+        color: black;
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid var(--color);
+        font-family: 'popins', sans-serif;
+    }
+
+
+    .form__input:not(:placeholder-shown) {
+        background-color: transparent;
+        color: black;
+        border-radius: 5px;
+    }
+
+
+    .form__input:focus+.form__label,
+    .form__input:not(:placeholder-shown)+.form__label {
+        transform: translateY(-12px) scale(.7);
+        transform-origin: left top;
+        color: #2f002c;
+    }
+
+    .form__label {
+        color: var(--color);
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s;
+    }
+
+    .form__line {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1%;
+        background-color: #2f002c;
+        transform: scale(0);
+        transform: left bottom;
+        transition: transform .4s;
+    }
+
+    .form__input:focus~.form__line,
+    .form__input:not(:placeholder-shown)~.form__line {
+        transform: scale(1);
+    }
+
+    /* boton de registro */
+
+    input[type="submit"] {
+    background-color: transparent;
+        position: center;
+        margin: 8px;
+        display: inline-block;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        border: none;
+        font-size: 15px;
+        text-decoration: none;
+        text-transform: uppercase;
+        overflow: hidden;
+    
+        cursor: pointer;
+        padding: 15px 20px;
+        font-size: 16px;
+        transition: 0.3s;
+        border-radius: 10px;
+    }
+    
+    input[type="submit"]:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 0;
+        background-color: rgb(185, 96, 206);
+        -webkit-filter: url("#goo");
+        filter: url("#goo");
+    }
+}
